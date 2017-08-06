@@ -1,0 +1,18 @@
+{
+  "name": "StarWars",
+  "version": "1.0.0",
+  "description": "Star wars trivia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prashant Sharma",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "connect": "~3.6.3",
+    "serve-static": "~1.12.3",
+    "angular": "~1.6.5",
+    "angular-ui-router": "~1.0.0-rc.1",
+    "angular-cookies": "~1.6.5"
+  }
+}
