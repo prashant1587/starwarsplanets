@@ -16,6 +16,6 @@
     "angular-cookies": "~1.6.5"
   },
   "engine":{
-    "nodejs":"0.10.25"
+    "nodejs":"6.11.2"
   }
 }
