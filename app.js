@@ -42,13 +42,16 @@ starWars.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$
     $stateProvider
         .state('login', {
             url: '/login',
-            templateUrl: 'templates/login.html'
+            templateUrl: 'templates/login.html',
+            controller:"LoginController",
+            controllerAs:'loginCtrl'
         })
 
         .state('user', {
             url: '/user',
             templateUrl: 'templates/user.html',
             controller:"UserController",
+            controllerAs:'userCtrl',
             resolve: {
                 allPlanets: function($stateParams, CommonService) {
                   return CommonService.getAllPlanets();

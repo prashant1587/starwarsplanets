@@ -1,20 +1,20 @@
-<div ng-controller="LoginController">
+<div>
 	<div class="container">
 	  <div class="base-container">
 	    <div class="Absolute-Center is-Responsive">
-	    	<div class="error" data-ng-if="userInvalid">{{userInvalidMessage}}</div>
+	    	<div class="error" data-ng-if="loginCtrl.userInvalid">{{loginCtrl.userInvalidMessage}}</div>
 	      <div class="col-sm-12 col-md-10">
 	        <form no-validate>
 	          <div class="form-group input-group">
 	            
-	            <input class="form-control" type="text" name='user' ng-model="user.username" placeholder="username"/>          
+	            <input class="form-control" type="text" name='user' ng-model="loginCtrl.user.username" placeholder="username"/>          
 	          </div>
 	          <div class="form-group input-group">
 	            
-	            <input class="form-control" type="password" ng-model="user.password" name='password' placeholder="password"/>     
+	            <input class="form-control" type="password" ng-model="loginCtrl.user.password" name='password' placeholder="password"/>     
 	          </div>
 	          <div class="form-group">
-	            <button type="button" class="btn btn-def btn-block" ng-click="validateLogin(user)">Login</button>
+	            <button type="button" class="btn btn-def btn-block" ng-click="loginCtrl.validateLogin(loginCtrl.user)">Login</button>
 	          </div>
 	        </form>        
 	      </div>  

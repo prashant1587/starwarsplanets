@@ -1,12 +1,12 @@
 <div class="contain">
-	<button type="button" class="btn btn-def btn-block" ng-click="LogOut(user)">Logout</button>
-	<input class="main-comment form-control" type ="text" placeholder="Search the planets..." ng-model="planetObj.planet" ng-change="searchPlanets()"/>
+	<button type="button" class="btn btn-def btn-block" ng-click="userCtrl.LogOut(userCtrl.user)">Logout</button>
+	<input class="main-comment form-control" type ="text" placeholder="Search the planets..." ng-model="userCtrl.planetObj.planet" ng-change="userCtrl.searchPlanets()"/>
 
 	<ul>
-	<li ng-show="errorMessage" class="error">{{errorMessage}}</li>
-		<li ng-repeat="planet in planets| orderBy:'-diameter'">
+	<li ng-show="userCtrl.errorMessage" class="error">{{userCtrl.errorMessage}}</li>
+		<li ng-repeat="planet in userCtrl.planets| orderBy:'-diameter'">
 		
-			<span ng-style="getStyle($index)">{{planet.name}}</span>
+			<span ng-style="userCtrl.getStyle($index)">{{planet.name}}</span>
 		</li>
 	</ul>
 </div>
